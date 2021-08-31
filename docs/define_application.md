@@ -234,6 +234,7 @@ Next, we will define address in a different way, as a collection of multiple ele
 
 
 3. Select `class` as element
+
 ![](images/0240_AddressPickClass.png)
 
 Within iRPA we can also see the underlying technical document structure of the page. We will use this to more precisely select the element that we want.
@@ -250,6 +251,7 @@ Within iRPA we can also see the underlying technical document structure of the p
 ![](images/0260_PickDivAbove.png)
 
 7. Add the `class` criteria instead.
+
 ![](images/0270_AddClassToRestrict.png)
 
 8. Class is selected. Set the name, e.g.
@@ -267,5 +269,162 @@ Now the element cannot be uniquely identified, because multiple elemnts fulfill 
 ![](images/0290_ShippingAsCollection.png)
 
 As a result, a collection is defined. The `check mark` is now green. The element is uniquely identified. And the technical page structure shows that multiple elements are contained in this collection (0, 1, 2, 3, 4).
+
 ![](images/0300_ShippingResult.png)
 
+
+## Define Line Items
+
+Next we will define the line items of an order. We will define each column as a collection.
+
+### Products
+
+1. Press on the first product cell. Make sure `td` is selected in the tree view. 
+
+2. Name this element, e.g.
+
+```
+Products
+```
+3. Remove the text criteria
+
+
+![](images/0310.png)
+
+4. Select `id` instead
+
+![](images/0320.png)
+
+5. Modify the criteria. Id should contain `cell0`, meaning the 0th column. 
+
+```
+cell0
+```
+
+![](images/0330.png)
+
+Now all 3 product cells have been identified. We want to define these as a collection.
+
+6. Click on `declare element`.
+
+![](images/0340.png)
+
+
+7. Click on `3 triangles`, to define these elements as a collection
+
+![](images/0350.png)
+
+The elements have been detected. `td` is the collection. The elements have been uniquely identified.
+
+
+![](images/0360.png)
+
+
+### Unit Prices
+
+1. Select the unit price in the first row.
+
+2. Make sure it's the `span` element in the tree, containing multiple elements (`24.34 EUR` instead of just `24.34`)
+
+
+![](images/0400.png)
+
+3. Remove text as criteria
+
+![](images/0410.png)
+
+4. Set `class` as criteria instead.
+
+![](images/0411.png)
+
+Now we want to make sure that the collection of multiple elements is based on the table cells. For this we will use `td` as the criteria for finding the `span` elements. 
+
+5. Right click on `td` and select `add to criteria`.
+
+![](images/0420.png)
+
+`td` is now part of the criteria. 
+
+6. Adjust the `id` of `td` to be `contains` and value:
+
+```
+cell1
+```
+
+![](images/0430.png)
+
+7. `Rename` the element to e.g.
+
+```
+unitPrices
+```
+
+8. Click on `declare element`
+
+![](images/0440.png)
+
+
+Now instead of defining a collection like we did before, we will declare the collection based on the parent element `td` we added as condition. This way the bot will loop over the `td` cells and find the `span` within these.
+
+9. Click on `...` next to `td` and click `set as collection`.
+
+![](images/0450.png)
+
+The element has been defined.
+
+![](images/0460.png)
+
+### Total Prices
+
+The last column is `total prices`. That column has a similar structure as `unit price`, so we will speed up the definition process by copying `unitPrice` element and adjusting the configuration slightly.
+
+1. Click on `...` next to `unitPrices`. 
+
+2. Select `duplicate`
+
+
+![](images/0470.png)
+
+3. Name the new element, e.g.
+
+```
+totalPrices
+```
+
+![](images/0480.png)
+
+
+Next, adjust the `id` of the cell from 2nd=`1` to 4th=`3` (counting starts from `0`)
+
+4. Click on `id` under `td`.
+
+![](images/0490.png)
+
+5. Set criteria to `contains`  and value
+
+```
+cell3
+```
+
+![](images/0500.png)
+
+The total prices have been defined. We didn't have to define them from scratch and were able to save time by duplicating another definition.
+
+
+![](images/0510.png)
+
+
+### Quantities - TODO
+
+
+
+
+## Save
+
+
+The screens and elements have been defined. We can now move on to defining the automation.
+
+Don't forget to save your work by clicking `save` in the top right.
+
+
+![](images/0520_dontForgetToSave.png)
