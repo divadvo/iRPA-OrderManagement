@@ -265,3 +265,65 @@ Next let's wait for the search results to load
 
 
 ![](images/0820.png)
+
+![](images/0821.png)
+
+
+2. Let's save the order number in a variable. Set the target to `Order Number`. Rename output parameter to `orderNumber`. 
+
+
+![](images/0822.png)
+
+
+Actually at this point the bot would sometimes receive `Order undefined` as the result. That's because the details view loads slower than the bot moving to the next step. For this reason, let's add a manual delay of `500` miliseconds for the details page to load.
+
+![](images/0823.png)
+
+If we test the main automation now, we will see that we correctly receive `Order 2686`.
+
+![](images/0824.png)
+
+3. Next, let's get the `Price` element and save it in the `price` variable
+
+![](images/0825.png)
+
+
+4. The shipping address is saved in a collection. Use the `Get Text All Elements (List)` operator. `Shipping Address` is the target. Name the output `array`
+
+![](images/0826.png)
+
+The name, adress, zip, etc from the shipping address are currently stored in an array. Let's add better structure to that by using `Data Types` from iRPA. These data types can store multiple variables and named fields, to represent more complex data structures. Let's create 2 data types: for a shipping address and a line item.
+
+
+
+![](images/0836.png)
+
+
+5. `Create` > `Data Type`
+
+![](images/0827.png)
+
+6. Name the data type, e.g.
+
+```
+Line Item
+```
+
+![](images/0828.png)
+
+7. Repeat the same steps to create another data type 
+
+```
+Shipping Address
+```
+
+
+![](images/0829.png)
+
+8. Now back in the `Line Item` data type, create a new field by clicking on `New Field`
+
+![](images/0830.png)
+
+9. Adjust the field properties to name = `Product` and type = `String` 
+
+![](images/0831.png)
