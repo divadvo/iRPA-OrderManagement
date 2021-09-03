@@ -9,4 +9,13 @@
     * [Continue Defining Third Screen](third_screen_continued.md)
 
 * Define Automation
-    * [Define Automation](define_automation.md)
+    * [Automation Into](automation_intro.md)
+    * [Main Automation](main_automation.md)
+    * [Searching Steps](searching_steps.md)
+    * [Search Results](search_results.md)
+    * [Shipping Address](shipping_address.md)
+    * [Line Items](line_items.md)
+    * [Input / Output Parameters](io_params.md)
+    * [Excel - First Worksheet](excel_first.md)
+    * [Excel - Second Worksheet](excel_second.md)
+    * [End](end.md)
