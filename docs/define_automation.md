@@ -465,3 +465,137 @@ The web automation will get the partner name from the main automation and give b
 4. Now actually define which variables will be returned, by selecting `parameters` and selecting the respective variables for outputs. 
 
 ![](images/0867.png)
+
+
+## Excel automation
+
+Now let's automate the Excel part. We have collected the data from the UI5 app. Now let's insert the data back into Excel. We will do this in the `Write Excel` sub-automation.
+
+Here is the expected result: 
+
+![](images/0920.png)
+
+![](images/0921.png)
+
+
+1. Switch to the `Write Excel` automation. Let's start by adding input parameters, which we got from the `Web Portal` sub-automation.
+
+![](images/0900.png)
+
+2. Add the same input paramers as the output paramers we added in the web automation.
+
+| Name        | Type           | List  |
+| ------------- |-------------| -----|
+| orderNumber      | String | no |
+| price      | String      |   no |
+| shippingAddress | Shipping Address      |    no |
+| lineItems | Line Item      |    yes |
+
+![](images/0901.png)
+
+![](images/0902.png)
+
+3. Use the `Set Values (Cells)` to write data into a specific cell. 
+
+`B2` and `orderNumber`
+
+![](images/0903.png)
+
+4. Duplicate this step
+
+![](images/0904.png)
+
+5. Change to `B3` and `price`
+
+![](images/0905.png)
+
+6. Duplicate and change using the expression editor, to get the value inside the data type.
+
+`B4` 
+
+```
+Step0.shippingAddress.Name
+```
+
+`Step0` contains the input parameters
+
+![](images/0906.png)
+
+![](images/0907.png)
+
+7. Repeat the steps for `Street` inside the shipping address.
+
+
+![](images/0908.png)
+
+8. Duplicate the steps to save time and adjust the parameters according to this table:
+
+| rangeDefinition        | Value           | 
+| ------------- |-------------|
+| B2      | orderNumber |
+| B3      | price      | 
+| B4 | Step0.shippingAddress.Name      | 
+| B5 | Step0.shippingAddress.Street      | 
+| B6 | Step0.shippingAddress.ZIP      | 
+| B7 | Step0.shippingAddress.Region      | 
+| B8 | Step0.shippingAddress.Country      | 
+
+![](images/0909.png)
+
+
+9. Add `Active Worksheet` step to which to the second worksheet with the order details. worksheetName = `Details`
+
+![](images/0909.png)
+
+10. Create a `For Each` loop to loop through the order line items. The looping list is `lineItems`
+
+![](images/0910.png)
+
+11. Drop `Set Values (Cells)` step inside the loop
+
+![](images/0911.png)
+
+12. Adjust parameters. The data cells start at row `2`, the index starts at `0`, so we use this formula to termine the correct cell
+
+```
+"A" + (Step9.index + 2)
+```
+
+`Values` = 
+
+```
+currentMember.Product
+```
+
+![](images/0912.png)
+
+13. Duplicate and repeat for unit price, with column `B` instead.
+
+
+![](images/0913.png)
+
+14. Duplicate and repeat for quantity, with column `C` instead.
+
+![](images/0914.png)
+
+14. Duplicate and repeat for total, with column `D` instead.
+
+![](images/0915.png)
+
+15. Within the main automation `Order Management` we now pass the outputs from `Web Portal` into inputs of `Write Excel`
+
+![](images/0916.png)
+
+
+## Testing automation
+
+If we now test the automation, we see the expected results. There are additional automation steps in RPA which can be used to format the cells. Because of the limited available time in this workshop we didn't include those steps. 
+
+![](images/0920.png)
+
+![](images/0921.png)
+
+
+## Congrats! 
+
+Nice, we have successfully created this automation! 🎉
