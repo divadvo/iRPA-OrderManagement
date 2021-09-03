@@ -15,4 +15,5 @@ Nice, we have successfully created this automation! 🎉
 
 This is what the final result looks like: 
 
-TODO add video
+
+[Video](images/OrderManagementVideo.mp4 ':include :type=video width=100% controls' )
