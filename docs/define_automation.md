@@ -383,3 +383,85 @@ lineItems
 ```
 
 ![](images/0841.png)
+
+
+2. Create a `for each` loop
+
+![](images/0850.png)
+
+3. Select `Products` as a looping list
+
+![](images/0851.png)
+
+4. Inside the for loop add `Get Element` step, set target = `currentMember` and output = `products`
+
+![](images/0852.png)
+
+5. Now duplicate the step by `right clicking` on get product. 
+
+![](images/0853.png)
+
+6. Rename the step, set target to `unitPrices` and output to `prices`
+
+![](images/0855.png)
+
+![](images/0854.png)
+
+7. Again, duplicate the step and similarly set target to `quantities` element and output to `quantities`.
+
+![](images/0856.png)
+
+![](images/0857.png)
+
+8. Repeat the steps for the total prices elements. Target is `totalPrices`. Output is `total`.
+
+![](images/0858.png)
+
+9. Add a line item variable step. Set the output to `lineItem`.
+
+![](images/0859.png)
+
+10. Click on `Edit activity` and adjust the varibles for this data type. 
+
+![](images/0860.png)
+
+Now let's add the data type containing just a single line item to the list of all line itmes. 
+
+11. Insert an `add item` step. List = `lineItems`. itemToAdd = `lineItem`
+
+![](images/0861.png)
+
+If we test the automation now we will see that the list is being generated. 
+
+![](images/0862.png)
+
+## Input output params - Web automation
+
+We have to pass data between sub-automation. We can do this by using input and output parameters.
+
+The web automation will get the partner name from the main automation and give back the order number, price, shipping info and line item details. This data will in turn be passed to the excel automation.
+
+1. Select `Web Portal` automation. Click anywhere on the grey area to open the automation parameters.
+
+2. Add an input parameter called `CustomerName` of type `string`
+
+![](images/0863.png)
+
+3. Similarly create output parameters
+
+| Name        | Type           | List  |
+| ------------- |-------------| -----|
+| orderNumber      | String | no |
+| price      | String      |   no |
+| shippingAddress | Shipping Address      |    no |
+| lineItems | Line Item      |    yes |
+
+![](images/0864.png)
+
+![](images/0865.png)
+
+![](images/0866.png)
+
+4. Now actually define which variables will be returned, by selecting `parameters` and selecting the respective variables for outputs. 
+
+![](images/0867.png)

@@ -414,8 +414,19 @@ The total prices have been defined. We didn't have to define them from scratch a
 ![](images/0510.png)
 
 
-### Quantities - TODO
+### Quantities
 
+1. Click on the quantities cell. Make sure the `td` (table cell) element is selected in the tree view.
+
+2. Adjust the criteria to `id`. In the popup choose `contains` and `cell2`.
+
+![](images/1001.png)
+
+Rename the element to `quantities`, make sure the criteria are like in the screen shot.
+
+Click on declare and make the element a collection by clicking on the triangles in the declared elements section.
+
+![](images/1002.png)
 
 
 
