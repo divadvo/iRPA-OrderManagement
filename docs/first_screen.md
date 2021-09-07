@@ -30,9 +30,11 @@ Browse Orders
 Orders List Screen
 ```
 
+7. Click on `capture`
+
 ![](images/0040_CreateCapture.png)
 
-4. The result is a captured application and captured first screen
+8. The result is a captured application and captured first screen
 
 
 ![](images/0050_ResultOfFirstCapture.png)

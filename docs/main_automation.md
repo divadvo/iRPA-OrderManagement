@@ -54,6 +54,34 @@ This means that this step will run and the result (value from cell B1) will be s
 
 ![](images/0707.png)
 
+## 🔹 Setup environment
+
+Before we can test our automation, let's setup an environment, which is a landscape within iRPA. For instance we can define environments for dev, test and prod. We will add your local desktop agent to a test environment, so we can test our automations.
+
+1. Back in the home screen of the cloud factory, go to `environemnts`. Then click on `New Environment`
+
+![](images/1010.png)
+
+2. Name the environment, e.g. `Test` with type = `Test`
+
+![](images/1011.png)
+
+3. The environment has been created. Now let's add an agent, in our case your local desktop agent, which will actually run the automation. Click on `Add Agent`.
+
+![](images/1012.png)
+
+4. Select your agent and click `Add agent`.
+
+![](images/1013.png)
+
+5. We can now go into the list of agents by clicking on `Agents`.
+
+![](images/1014.png)
+
+6. Here we will see your agent that you have just added. We can now continue and test the automation.
+
+![](images/1015.png)
+
 
 ## 🔹 How to test automation
 
@@ -80,3 +108,5 @@ After the automation has completed, you can see the debug screen (`Tester`). In 
 4. For instance, click on the step `Get Values (cells)` and we see the correct output value on the right `Bottom-Dollar Markets`. The automation ran correctly
 
 ![](images/0712.png)
+
+5. Please don't forget to close both excel, as well as the UI5 app after each time you test the automation.

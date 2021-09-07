@@ -28,7 +28,7 @@ Next let's wait for the search results to load
 ![](images/0821.png)
 
 
-2. Let's save the order number in a variable. Set the target to `Order Number`. Rename output parameter to `orderNumber`. 
+2. Let's save the order number in a variable. Use the step `Get Element`. Set the target to `Order Number`. Rename output parameter to `orderNumber`. 
 
 
 ![](images/0822.png)

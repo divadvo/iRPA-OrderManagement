@@ -25,7 +25,7 @@ Desired result:
 `Values` = 
 
 ```
-currentMember.Product
+Step9.currentMember.Product
 ```
 
 ![](images/0912.png)
@@ -43,6 +43,8 @@ currentMember.Product
 
 ![](images/0915.png)
 
-15. Within the main automation `Order Management` we now pass the outputs from `Web Portal` into inputs of `Write Excel`
+15. Save all automations 
+
+16. Within the main automation `Order Management` we now pass the outputs from `Web Portal` into inputs of `Write Excel`
 
 ![](images/0916.png)

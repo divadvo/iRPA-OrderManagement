@@ -23,7 +23,7 @@ Products
 
 ![](images/0320.png)
 
-5. Modify the criteria. Id should contain `cell0`, meaning the 0th column. 
+5. Modify the criteria. Id should `contain` `cell0`, meaning the 0th column. 
 
 ```
 cell0
@@ -102,6 +102,10 @@ The element has been defined.
 
 ![](images/0460.png)
 
+10. Don't forget to save the progress by clicking on the `save` button at the top right.
+
+![](images/0520_dontForgetToSave.png)
+
 ### Total Prices
 
 The last column is `total prices`. That column has a similar structure as `unit price`, so we will speed up the definition process by copying `unitPrice` element and adjusting the configuration slightly.
@@ -146,13 +150,13 @@ The total prices have been defined. We didn't have to define them from scratch a
 
 1. Click on the quantities cell. Make sure the `td` (table cell) element is selected in the tree view.
 
-2. Adjust the criteria to `id`. In the popup choose `contains` and `cell2`.
+2. Remove the text criteria. Adjust the criteria to `id`. In the popup choose `contains` and `cell2`.
 
 ![](images/1001.png)
 
-Rename the element to `quantities`, make sure the criteria are like in the screen shot.
+3. Rename the element to `quantities`, make sure the criteria are like in the screenshot.
 
-Click on declare and make the element a collection by clicking on the triangles in the declared elements section.
+4. Click on declare and make the element a collection by clicking on the triangles in the declared elements section.
 
 ![](images/1002.png)
 

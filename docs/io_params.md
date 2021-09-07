@@ -28,6 +28,8 @@ The web automation will get the partner name from the main automation and give b
 
 ![](images/0866.png)
 
-4. Now actually define which variables will be returned, by selecting `parameters` and selecting the respective variables for outputs. 
+4. Now actually define which variables will be returned. Click on the `End` step, select `parameters` and select the respective variables for outputs. 
 
 ![](images/0867.png)
+
+5. Don't forget to save the automation.

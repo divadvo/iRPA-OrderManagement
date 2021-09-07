@@ -91,3 +91,5 @@ However, the value still hasn't been passed from the main automation. To do that
 ![](images/0815.png)
 
 ![](images/0816.png)
+
+15. Don't forget to `save` the progress. 

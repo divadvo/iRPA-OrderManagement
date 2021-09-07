@@ -19,6 +19,8 @@ Before we start, please make sure you have
 
 ## Getting help
 
+Please note that both instructions and screenshots are given. Some screenshots are related to multiple previous steps.
+
 If you have any questions or get stuck, please let us know.
 
 
@@ -30,4 +32,4 @@ We will develop the automation in multiple steps. We will:
 3. Define automation: on UI5 and Excel sides
 4. Test automation
 
-We will interatively ensure that we are on the right track.
+We will iteratively ensure that we are on the right track.

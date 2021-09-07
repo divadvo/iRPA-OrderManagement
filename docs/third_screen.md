@@ -52,7 +52,7 @@ As before, we are going to adjust the criteria.
 
 6. A popup will be opened. Change the `operator` to `contains`. 
 
-7. Change `value` to `Order ` with a space in the end
+7. Change `value` to `Order ` **with a space at the end**
 
 ```
 Order 
@@ -140,3 +140,7 @@ Now the element cannot be uniquely identified, because multiple elemnts fulfill 
 As a result, a collection is defined. The `check mark` is now green. The element is uniquely identified. And the technical page structure shows that multiple elements are contained in this collection (0, 1, 2, 3, 4).
 
 ![](images/0300_ShippingResult.png)
+
+11. Don't forget to save the progress by clicking on the `save` button at the top right.
+
+![](images/0520_dontForgetToSave.png)

@@ -10,6 +10,8 @@ The name, adress, zip, etc from the shipping address are currently stored in an 
 
 ![](images/0836.png)
 
+`Save` the automation you have so far.
+
 
 5. `Create` > `Data Type`
 
@@ -49,9 +51,11 @@ Shipping Address
 
 ![](images/0833.png)
 
+12. Don't forget to `Save` both data types
+
 ## Saving shipping address
 
-1. Back in the automation add the `Shipping Address` step. 
+1. Back in the `Web Portal` automation add the `Shipping Address` step. 
 
 
 ![](images/0834.png)
@@ -61,7 +65,7 @@ Shipping Address
 
 ![](images/0835.png)
 
-3. Now let's set the values of the data type from the array. Click on `Edit Activity`. Under `Name` select `array[0]`
+3. Now let's set the values of the data type from the array. Click on `Edit Activity`. Under `Name` select `array[0]`. If `array[0]` option is not available, please see how to manually select that, like in the next steps.
 
 ![](images/0837.png)
 
