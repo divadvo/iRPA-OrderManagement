@@ -1,18 +1,16 @@
 
 ![](../../images/hero.png)
 
-# Switch Language
-
-[en](https://divadvo.github.io/iRPA-OrderManagement/#/)  [de](https://divadvo.github.io/iRPA-OrderManagement/#/de/)
-
 # Intro
-
-Willkommen
 
 In this hands-on we are going to automate the extraction of order data from a UI5 app into Excel, with help of SAP Intelligent RPA (SAP iRPA).
 
 [Video](../images/OrderManagementVideo.mp4 ':include :type=video width=100% controls' )
 
+
+## Switch Language
+
+[en](https://divadvo.github.io/iRPA-OrderManagement/#/)  [de](https://divadvo.github.io/iRPA-OrderManagement/#/de/)
 
 
 ## Prerequisites
