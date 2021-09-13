@@ -92,7 +92,7 @@ Price
 
 ### Adresse
 
-Als Nächstes werden wir die Adresse anders definieren, nämlich als eine Sammlung von mehreren Elementen
+Als Nächstes werden wir die Adresse anders als eine Sammlung von mehreren Elementen definieren
 
 1. Klicken Sie in der Vorschau auf den Namen unter der Lieferadresse
 
@@ -109,14 +109,14 @@ Als Nächstes werden wir die Adresse anders definieren, nämlich als eine Sammlu
 
 In iRPA können wir auch die zugrundeliegende technische Dokumentstruktur der Seite sehen. Wir werden dies nutzen, um das gewünschte Element genauer auszuwählen.
 
-4. Klicken Sie oben auf `both`, um sowohl die Vorschau als auch die technische Struktur anzuzeigen.
+4. Klicken Sie oben auf `both`, um sowohl die Vorschau als auch die technische Struktur der Seite anzuzeigen.
 
 5. Wählen Sie `div` (Container) anstelle des `span`. Auf diese Weise können wir dieses Element mit den anderen Elementen der Adresse verbinden.
 
 
 ![](../images/0250_OpenTree.png)
 
-6. `div` ist ausgewählt.Entfernen wir nun das Kriterium `text`, da es zu spezifisch ist.
+6. `div` ist ausgewählt. Entfernen wir nun das Kriterium `text`, da es zu spezifisch ist.
 
 ![](../images/0260_PickDivAbove.png)
 
@@ -143,6 +143,6 @@ Als Ergebnis wird eine Sammlung definiert. Das Häkchen ist nun grün. Das Eleme
 
 ![](../images/0300_ShippingResult.png)
 
-11. Vergessen Sie nicht, den Fortschritt zu speichern, indem Sie auf die Schaltfläche `save` oben rechts klicken.
+11. Vergessen Sie nicht, den Fortschritt zu speichern, indem Sie auf die `save` oben rechts klicken.
 
 ![](../images/0520_dontForgetToSave.png)

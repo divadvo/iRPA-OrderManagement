@@ -33,7 +33,6 @@ Overview
 ![](../images/0703.png)
 
 
-4. We want to get a value from a cell. Repeat the steps above for `Get Values (Cells)`. Set `rangeDefinition` = `B1`. And rename outputParamenter to  
 4. Wir möchten einen Wert aus einer Zelle auslesen. Fügen Sie den Schritt `Get Values (Cells)` hinzu. `rangeDefinition` = `B1`. Und benennen Sie `outputParamenter` um in
 
 ```
@@ -45,7 +44,6 @@ Dies bedeutet, dass dieser Schritt ausgeführt wird und das Ergebnis (Wert aus Z
 
 ![](../images/0704.png)
 
-5. Add `Web Portal` and `Write Excel` subautomations. So far they are not doing anything, but just acting as placeholders. 
 5. Fügen Sie `Web Portal` and `Write Excel`  Unter-Automatisierungen hinzu. Bislang tun sie nichts, sondern dienen nur als Platzhalter.
 
 
@@ -107,7 +105,6 @@ Es dauert eine Weile, bis der Desktop-Agent die Automatisierung heruntergeladen,
 
 Nachdem die Automatisierung abgeschlossen ist, sehen Sie den Debug-Bildschirm (`Tester`). Hier können Sie entweder die Ausgabe der Testkonsole (`test console`) überprüfen oder auf einzelne Schritte in der Automatisierung klicken, um die Details auf der rechten Seite zu sehen.
 
-4. For instance, click on the step `Get Values (cells)` and we see the correct output value on the right `Bottom-Dollar Markets`. The automation ran correctly
 4. Klicken Sie zum Beispiel auf den Schritt `Get Values (cells)` und wir sehen den korrekten Ausgabewert auf der rechten Seite: `Bottom-Dollar Markets`. Die Automatisierung wurde korrekt ausgeführt
 
 ![](../images/0712.png)

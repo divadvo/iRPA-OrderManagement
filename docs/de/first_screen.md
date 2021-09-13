@@ -5,7 +5,7 @@ Als Nächstes werden wir die Anwendung definieren, die in unserer Automatisierun
 
 ## Anwendung erstellen
 
-1. 1.	Vergewissern Sie sich, dass die [UI5 app](https://openui5.hana.ondemand.com/test-resources/sap/m/demokit/orderbrowser/webapp/test/mockServer.html) in einem separaten Fenster geöffnet ist, nicht nur in einem neuen Tab. Der Desktop Agent sollte ebenfalls laufen und mit dem richtigen Tenant verbunden sein.
+1. Vergewissern Sie sich, dass die [UI5 app](https://openui5.hana.ondemand.com/test-resources/sap/m/demokit/orderbrowser/webapp/test/mockServer.html) in einem separaten Fenster geöffnet ist, nicht nur in einem neuen Tab. Der Desktop Agent sollte ebenfalls laufen und mit dem richtigen Tenant verbunden sein.
 
 2. Wählen Sie  `Create` > `Application`
 
@@ -52,7 +52,7 @@ searchBox
 ```
 
 3. Stellen Sie sicher, dass das Element eindeutig indentifiziert wird (grüner Status)
-4. Verfessen Sie nicht, auf `declare element` zu klicken, um sicherzustellen, dass dieses Element auch wirklich gespeichert wird.
+4. Vergessen Sie nicht, auf `declare element` zu klicken, um sicherzustellen, dass dieses Element auch wirklich gespeichert wird.
 5. Das definierte Suchkastenelement wird unter `Declared elements` mit einem grünen Status angezeigt. Das bedeutet, dass das Element erfolgreich definiert wurde.
 
 ![](../images/0060_SearchBoxCapture.png)

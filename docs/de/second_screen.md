@@ -44,7 +44,7 @@ OrderFound
 ![](../images/0091_SelectResultItem.png)
 
 
-Wir werden die Kriterien so anpassen, dass das Element unabhängig von der Bestellnummer erkannt werden kann. Derzeit würde RPA nach einer sehr spezifischen Liste von Kriterien suchen, um ein Element zu finden. Diese Kriterien können im Abschnitt `criteria` auf der rechten Seite gefunden und geändert werden.
+Wir werden die Kriterien so anpassen, damit das Element unabhängig von der Bestellnummer erkannt werden kann. Derzeit würde RPA nach einer sehr spezifischen Liste von Kriterien suchen, um ein Element zu finden. Diese Kriterien können im Abschnitt `criteria` auf der rechten Seite gefunden und geändert werden.
 
 Wir werden speziell nach dem Element suchen, welches `Order` als Text enthält.
 
@@ -68,7 +68,7 @@ Order
 
 10. Wir können nun das Element speichern, indem wir auf `Declare Element` klicken.
 
-11. Das Element wird unter `Declared Elements` gespeichert
+11. Das Element wird unter `Declared Elements` angezeigt
 
 
 ![](../images/0120_ResultTextContainsOrder.png)

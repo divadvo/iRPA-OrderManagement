@@ -1,7 +1,7 @@
 # Einführung in die Automatisierung
 
 ## Übersicht
-Die Bildschirme und Elemente sind nun definiert. Wir können nun die eigentliche Automatisierung erstellen.
+Die Bildschirme und Elemente sind definiert. Wir können nun die eigentliche Automatisierung erstellen.
 
 Lassen Sie uns darüber nachdenken, was unser Bot tun sollte. Im Groben sollte er: 
 - Excel öffnen und einige Daten von dort auslesen 
@@ -60,7 +60,7 @@ Write Excel
 
 Wir werden diesen Vorgang mehrmals wiederholen, um neue Schritte zur Automatisierung hinzuzufügen. Bitte wiederholen sie diesen Vorgang in den nachfolgenden Abschnitten.
 
-1. Drücken Sie auf das leere Feld in der Vorschau, um alle anderen offenen Optionen zu schließen
+1. Klicken Sie auf das leere Feld in der Vorschau, um alle anderen offenen Optionen zu schließen
 
 2. Suchen Sie in der Suchleiste nach dem Schrittnamen
 

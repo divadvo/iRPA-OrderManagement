@@ -38,7 +38,7 @@ Nun sind alle 3 Produktzellen identifiziert worden. Wir wollen diese als eine Li
 ![](../images/0340.png)
 
 
-7. Klicken Sie auf  `3 Dreiecke`, um diese Elemente als eine Sammlung zu definieren
+7. Klicken Sie auf  `3 Dreiecke`, um diese Elemente als eine Liste zu definieren
 
 ![](../images/0350.png)
 
@@ -126,7 +126,7 @@ totalPrices
 ![](../images/0480.png)
 
 
-Als Nächstes passen Sie die `id` der Zelle von 2=`1` bis 4=`3` an (die Zählung beginnt bei `0`)
+Als Nächstes passen Sie die `id` der Zelle von `1` zu `3` an (Die vierte Spalte statt der Zweiten. Die Zählung beginnt bei `0`)
 
 4. Klicken Sie auf `id` unter `td`.
 

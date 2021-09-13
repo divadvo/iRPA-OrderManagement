@@ -42,7 +42,7 @@ Als nächstes werden wir die Automatisierung innerhalb der UI5-App definieren. H
 
 ![](../images/0807.png)
 
-8. Außerdem sollte RPA warten, um sicherzustellen, dass auch die Suchleiste geladen wird. Ziehen Sie `Wait (Element)` auf die Vorschau der Suchleiste. Vergewissern Sie sich, dass das Ziel auf Suchleistenelement eingestellt ist.
+8. Außerdem sollte RPA warten, um sicherzustellen, dass auch die Suchleiste geladen wird. Ziehen Sie `Wait (Element)` auf die Vorschau der Suchleiste. Vergewissern Sie sich, dass das Ziel `target` auf Suchleistenelement eingestellt ist.
 
 
 ![](../images/0808.png)
@@ -59,8 +59,7 @@ Wie erhalten wir den Namen des Lieferanten, den wir aus Excel erhalten haben? Di
 
 ![](../images/0810.png)
 
-11. Press on empty space to change the settings of the automation. Click on `I/O` > `Add new input parameter`.
-11. Drücken Sie auf ein leeres Feld, um die Einstellungen für die Automatisierung zu ändern. Klicken Sie auf `I/O` > `Add new input parameter`.
+11. Klicken Sie auf ein leeres Feld, um die Einstellungen für die Automatisierung zu ändern. Klicken Sie auf `I/O` > `Add new input parameter`.
 
 
 ![](../images/0811.png)
@@ -83,7 +82,6 @@ Type = `string`. Klicken Sie auf das leere Feld, um diese Einstellungen zu speic
 
 Der Wert wurde jedoch noch nicht von der Hauptautomatisierung übergeben. Um dies zu tun
 
-14. Go to the main automation either from the left side or from the tabs at the top. Select the `Web Portal` step and provide the input parameter
 14. Rufen Sie die Hauptautomatisierung auf, entweder über die linke Seite oder über die Registerkarten am oberen Rand. Wählen Sie den Schritt `Web Portal` und geben Sie den Eingabeparameter ein
 
 ![](../images/0814.png)

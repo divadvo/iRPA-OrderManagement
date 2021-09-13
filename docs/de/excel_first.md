@@ -43,8 +43,7 @@ Hier ist das gewünschte Ergebnis:
 
 ![](../images/0905.png)
 
-6. Duplicate and change using the expression editor, to get the value inside the data type.
-6. Verwemdem Sie den `expression editor`, um den Wert innerhalb des Datentyps zu erhalten.
+6. Verwendem Sie den `expression editor`, um den Wert innerhalb des Datentyps zu erhalten.
 
 `B4` 
 

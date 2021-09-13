@@ -39,18 +39,15 @@ Shipping Address
 
 ![](../images/0830.png)
 
-9. Adjust the field properties to name = `Product` and type = `String` 
 9. Passen Sie die Feldeigenschaften an. name = `Product` und type = `String` 
 
 ![](../images/0831.png)
 
-10. Repeat the steps to create the other fields: `Product`, `UnitPrice`, `Quantity`, `Total`. All of the are of type `String`
 10. Wiederholen Sie diese Schritte, um die anderen Felder zu erstellen: `Product`, `UnitPrice`, `Quantity`, `Total`. Alle Felder sind vom Typ `String`
 
 
 ![](../images/0832.png)
 
-11. Repeat same steps to create fields inside the `Shipping Address` datatype: `Name`, `Street`, `ZIP`, `Region`, `Country`. All of these are `String`.
 11. Wiederholen Sie dieselben Schritte, um Felder innerhalb des Datentyps `Shipping Address` zu erstellen: `Name`, `Street`, `ZIP`, `Region`, `Country`. Alle diese Felder sind `String`.
 
 ![](../images/0833.png)

@@ -8,7 +8,7 @@ Gewünschte Ergebnis:
 
 ![](../images/0909.png)
 
-2. Erstellen Sie eine For `For Each` -Schleife, um die Auftragspositionen zu durchlaufen. Die Liste für die Schleife ist `lineItems`
+2. Erstellen Sie eine For `For Each` Schleife, um die Auftragspositionen zu durchlaufen. Die Liste für die Schleife ist `lineItems`
 
 ![](../images/0910.png)
 

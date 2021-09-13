@@ -4,7 +4,7 @@
 
 Als nächstes soll der Bot warten, bis die Suchergebnisse geladen sind
 
-1. Fügen Sie den Schritt `Wait (Element)` mit Ziel der Zeile hinzufügen
+1. Fügen Sie den Schritt `Wait (Element)` mit `target` = Zeile hinzu
 
 
 ![](../images/0817.png)
@@ -20,7 +20,6 @@ Als nächstes soll der Bot warten, bis die Suchergebnisse geladen sind
 
 ## Warten bis die Details geladen sind
 
-1. RPA should wait for the details screen to open and load. Add `Wait (Element)` step with `Order Number` as target
 1. RPA sollte darauf warten, dass der Detailbildschirm geöffnet und geladen wird. Fügen Sie den Schritt `Wait (Element)` mit `Order Number` als Ziel hinzu
 
 
@@ -41,7 +40,6 @@ Wenn wir jetzt die Hauptautomatisierung testen, werden wir sehen, dass wir die B
 
 ![](../images/0824.png)
 
-3. Next, let's get the `Price` element and save it in the `price` variable
 3. Als Nächstes speichern wir das Element `Price` in der Variable `price`
 
 ![](../images/0825.png)
