@@ -1,18 +1,18 @@
-# Main Automation 
+# Hauptautomatisierung
 
-## Define steps
+## Schritte definieren
 
-Let's define the general structure of our automation. Here is the data we want from excel:
+Lassen Sie uns die allgemeine Struktur unserer Automatisierung definieren. Hier sind die Daten, die wir aus Excel benötigen:
 
 ![](../images/0705.png)
 
-1. We want to open Excel. Repeat the steps above for `Open Excel Instance`.
+1. Wir möchten Excel öffnen. Wiederholen Sie die zuvor beschriebenen Schritte, um den Schritt `Open Excel Instance` hinzuzufügen.
 
 ![](../images/0701.png)
 
-2. We want to open the correct workbook. Repeat the steps above for `Open Workbook`.
+2. Wir möchten die richtige Arbeitsmappe öffnen. Fügen Sie den Schritt `Open Workbook` hinzu.
 
-In the parameters on the right, edit the expression and enter the full path to your file. Make sure the path is within quotation marks `"..."` E.g.
+Bearbeiten Sie in den Parametern auf der rechten Seite, ändern Sie `expression` und geben Sie den vollständigen Pfad zu Ihrer Datei ein. Stellen Sie sicher, dass der Pfad in Anführungszeichen `"..."` steht, z.B.
 
 ```
 "C:\Users\you\Desktop\Demo_Procurement.xlsx"
@@ -23,7 +23,7 @@ In the parameters on the right, edit the expression and enter the full path to y
 
 ![](../images/07021.png)
 
-3. We want to open a specific worksheet. Repeat the steps above for `Activate Worksheet`. Set `worksheetName` = 
+3. Wir möchten ein bestimmtes Arbeitsblatt öffnen. Fügen Sie den Schritt `Activate Worksheet` hinzu. `worksheetName` = 
 
 ```
 Overview
@@ -34,79 +34,82 @@ Overview
 
 
 4. We want to get a value from a cell. Repeat the steps above for `Get Values (Cells)`. Set `rangeDefinition` = `B1`. And rename outputParamenter to  
+4. Wir möchten einen Wert aus einer Zelle auslesen. Fügen Sie den Schritt `Get Values (Cells)` hinzu. `rangeDefinition` = `B1`. Und benennen Sie `outputParamenter` um in
 
 ```
 supplierName
 ```
 
-This means that this step will run and the result (value from cell B1) will be saved in a variable called `supplierName`
+Dies bedeutet, dass dieser Schritt ausgeführt wird und das Ergebnis (Wert aus Zelle B1) in einer Variablen namens `supplierName` gespeichert wird.
 
 
 ![](../images/0704.png)
 
-5. And `Web Portal` and `Write Excel` subautomations. So far they are not doing anything, but just acting as placeholders. 
+5. Add `Web Portal` and `Write Excel` subautomations. So far they are not doing anything, but just acting as placeholders. 
+5. Fügen Sie `Web Portal` and `Write Excel`  Unter-Automatisierungen hinzu. Bislang tun sie nichts, sondern dienen nur als Platzhalter.
 
 
 ![](../images/0706.png)
 
-6. At the end we want to make sure that Excel is not used by iRPA anymore. We release the instance. Repeat the steps above for `Release Excel Instance`
+6. Am Ende möchten wir sicherstellen, dass Excel nicht mehr von iRPA verwendet wird. Wir geben die Instanz frei. Fügen Sie den Schritt `Release Excel Instance` hinzu.
 
 
 ![](../images/0707.png)
 
-## 🔹 Setup environment
+## 🔹 Umgebung einrichten
 
-Before we can test our automation, let's setup an environment, which is a landscape within iRPA. For instance we can define environments for dev, test and prod. We will add your local desktop agent to a test environment, so we can test our automations.
+Bevor wir unsere Automatisierung testen können, müssen wir eine Umgebung einrichten, die eine Landschaft innerhalb von iRPA darstellt. Zum Beispiel können wir Umgebungen für Dev, Test und Prod definieren. Wir werden Ihren lokalen Desktop-Agenten zu einer Testumgebung hinzufügen, damit wir unsere Automatisierungen testen können.
 
-1. Back in the home screen of the cloud factory, go to `environemnts`. Then click on `New Environment`
+1. Zurück auf dem Startbildschirm der Cloud Factory, gehen Sie zu `environemnts`. Dann klicken Sie auf `New Environment`
 
 ![](../images/1010.png)
 
-2. Name the environment, e.g. `Test` with type = `Test`
+2. Benennen Sie die Umgebung, z.B. `Test` mit type = `Test`
 
 ![](../images/1011.png)
 
-3. The environment has been created. Now let's add an agent, in our case your local desktop agent, which will actually run the automation. Click on `Add Agent`.
+3. Die Umgebung ist nun erstellt. Fügen wir nun einen `agent` hinzu, in unserem Fall Ihren lokalen Desktop-Agenten, der die Automatisierung tatsächlich ausführen wird. Klicken Sie `Add Agent`.
 
 ![](../images/1012.png)
 
-4. Select your agent and click `Add agent`.
+4. Wählen Sie Ihren Agenten aus und klicken Sie auf `Add agent`.
 
 ![](../images/1013.png)
 
-5. We can now go into the list of agents by clicking on `Agents`.
+5. Wir können nun die Liste der Agenten aufrufen, indem wir auf  `Agents` klicken.
 
 ![](../images/1014.png)
 
-6. Here we will see your agent that you have just added. We can now continue and test the automation.
+6. Hier sehen Sie Ihren Agenten, den Sie gerade hinzugefügt haben. Wir können nun fortfahren und die Automatisierung testen.
 
 ![](../images/1015.png)
 
 
-## 🔹 How to test automation
+## 🔹 Wie testet man die Automatisierung?
 
-Let's not do too much work without seeing what the bot does and if we make any mistakes. 
+Wir sollten uns nicht zu viel Änderungen vornehmen, ohne zu sehen, was der Bot macht und ob wir Fehler machen.
 
-1. `Save` the automation, then click on `test`.
+1. Speichern Sie die Automatisierung (auf `Save` klicken) und klicken Sie dann auf `test`.
 
-2. Select your environment.
+2. Wählen Sie Ihre Umgebung aus.
 
-3. Click on `test`.
+3. Klicken Sie auf `test`.
 
 
 ![](../images/0708.png)
 
-It takes a while for the desktop agent to download, process and run the automation. Here are some of the messages you will see:
+Es dauert eine Weile, bis der Desktop-Agent die Automatisierung heruntergeladen, verarbeitet und ausgeführt hat. Hier sind einige der Meldungen, die Sie sehen werden:
 
 |  |  |  |
 :-------------------------:|:-------------------------:|:-------------------------:|
 ![](../images/0709.png)  |  ![](../images/0710.png) |  ![](../images/0711.png)
 
 
-After the automation has completed, you can see the debug screen (`Tester`). In here you can either check the output of the `test console` or click on single steps in the automation to see the details on the right side. 
+Nachdem die Automatisierung abgeschlossen ist, sehen Sie den Debug-Bildschirm (`Tester`). Hier können Sie entweder die Ausgabe der Testkonsole (`test console`) überprüfen oder auf einzelne Schritte in der Automatisierung klicken, um die Details auf der rechten Seite zu sehen.
 
 4. For instance, click on the step `Get Values (cells)` and we see the correct output value on the right `Bottom-Dollar Markets`. The automation ran correctly
+4. Klicken Sie zum Beispiel auf den Schritt `Get Values (cells)` und wir sehen den korrekten Ausgabewert auf der rechten Seite: `Bottom-Dollar Markets`. Die Automatisierung wurde korrekt ausgeführt
 
 ![](../images/0712.png)
 
-5. Please don't forget to close both excel, as well as the UI5 app after each time you test the automation.
+5. Bitte vergessen Sie nicht, sowohl Excel als auch die UI5-App nach jedem Test der Automatisierung zu schließen.

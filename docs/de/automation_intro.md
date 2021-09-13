@@ -1,33 +1,33 @@
-# Automation Intro
+# Einführung in die Automatisierung
 
-## Overview
-The screens and elements have been defined. We can now create the actual automation.
+## Übersicht
+Die Bildschirme und Elemente sind nun definiert. Wir können nun die eigentliche Automatisierung erstellen.
 
-Let's think about what our bot should do. On a very high level it should:
-- Open Excel and read out some data from there
-- Open a webpage and extract some other data from there, based on the data from excel
-- Write the found data back into excel
+Lassen Sie uns darüber nachdenken, was unser Bot tun sollte. Im Groben sollte er: 
+- Excel öffnen und einige Daten von dort auslesen 
+- Eine Webseite öffnen und basierend auf den Daten aus Excel einige andere Daten von dort extrahieren 
+- Die gefundenen Daten zurück in Excel schreiben
 
-We can start creating our automation from this high level and go down, implementing the details. 
+Wir können mit der Erstellung unserer Automatisierung auf dieser hohen Ebene beginnen und dann die Details implementieren.
 
-## Creating sub-automations
+## Unter-Automatisierungen Erstellen
 
-Let's start by creating 3 automation: one main one, one for the UI5 part, one for Excel one
+Beginnen wir mit der Erstellung von 3 Automatisierungen: eine Hauptautomatisierung, eine für den UI5-Teil und eine für Excel.
 
-1. Click on `create` > `automation`
+1. Klicken Sie auf  `create` > `automation`
 
 ![](../images/0600.png)
 
 
-2. Select the version which is tagged `local`. This is the version of your desktop agent installed locally. Even if a higher version is available in the dropdown, please select the `local` version, to make sure that the automation can run on your machine.
+2. Wählen Sie die Version, die als lokal (`local`) gekennzeichnet ist. Dies ist die lokal installierte Version Ihres Desktop-Agenten. Auch wenn im Dropdown-Menü eine höhere Version verfügbar ist, wählen Sie bitte die lokale Version aus, um sicherzustellen, dass die Automatisierung auf Ihrem Computer ausgeführt werden kann.
 
 ![](../images/0601.png)
 
-3. Click `Confirm`
+3. Klicken Sie auf  `Confirm`
 
 ![](../images/0602.png)
 
-4. Name the automation, e.g.
+4. Benennen Sie die Automatisierung, z.B.
 
 ```
 Order Management
@@ -36,17 +36,18 @@ Order Management
 ![](../images/0603.png)
 
 
-An empty automation has been created.
+Es wurde eine leere Automatisierung erstellt.
+
 
 ![](../images/0604.png)
 
-Repeat the steps `1` - `4` to create 2 more automations:
+Wiederholen Sie die Schritte `1` - `4` um 2 weitere Automatisierungen zu erstellen:
 
 ```
 Web Portal
 ```
 
-and 
+und 
 
 ```
 Write Excel
@@ -55,16 +56,16 @@ Write Excel
 ![](../images/0605.png)
 
 
-## 🔹 How to add automation steps 
+## 🔹 Automatisierungsschritte hinzufügen
 
-We will repeat this process multiple times to add new steps to the automation. Please do this in the following steps.
+Wir werden diesen Vorgang mehrmals wiederholen, um neue Schritte zur Automatisierung hinzuzufügen. Bitte wiederholen sie diesen Vorgang in den nachfolgenden Abschnitten.
 
-1. Press on the empty space within the preview to close all other open options
+1. Drücken Sie auf das leere Feld in der Vorschau, um alle anderen offenen Optionen zu schließen
 
-2. Search for the step name in the seach bar
+2. Suchen Sie in der Suchleiste nach dem Schrittnamen
 
-3. If necessary, click on `clear filter` to show all available steps
+3. Falls nötig, klicken Sie auf `clear filter`, um alle verfügbaren Schritte anzuzeigen.
 
-4. Select the desired action and `drag and drop` it in the correct position
+4. Wählen Sie die gewünschte Aktion aus und ziehen Sie diese per `drag and drop` an die richtige Stelle.
 
 ![](../images/0700_DropStep.png)

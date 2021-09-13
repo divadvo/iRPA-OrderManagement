@@ -44,7 +44,7 @@ This means that this step will run and the result (value from cell B1) will be s
 
 ![](images/0704.png)
 
-5. And `Web Portal` and `Write Excel` subautomations. So far they are not doing anything, but just acting as placeholders. 
+5. Add `Web Portal` and `Write Excel` subautomations. So far they are not doing anything, but just acting as placeholders. 
 
 
 ![](images/0706.png)

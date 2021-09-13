@@ -9,8 +9,8 @@
     * [Dritten Bildschirm Definieren - Teil 2](de/third_screen_continued.md)
 
 * Automatisierung Definieren
-    * [Automation Into](de/automation_intro.md)
-    * [Main Automation](de/main_automation.md)
+    * [Automatisierung Into](de/automation_intro.md)
+    * [Hauptautomatisierung](de/main_automation.md)
     * [Searching Steps](de/searching_steps.md)
     * [Search Results](de/search_results.md)
     * [Shipping Address](de/shipping_address.md)
