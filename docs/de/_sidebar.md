@@ -11,7 +11,7 @@
 * Automatisierung Definieren
     * [Automatisierung Into](de/automation_intro.md)
     * [Hauptautomatisierung](de/main_automation.md)
-    * [Searching Steps](de/searching_steps.md)
+    * [Suche](de/searching_steps.md)
     * [Search Results](de/search_results.md)
     * [Shipping Address](de/shipping_address.md)
     * [Line Items](de/line_items.md)
