@@ -1,22 +1,22 @@
-# Excel - First Worksheet
+# Excel - Erstes Arbeitsblatt
 
 
 <!-- ## Excel automation -->
 
-Now let's automate the Excel part. We have collected the data from the UI5 app. Now let's insert the data back into Excel. We will do this in the `Write Excel` sub-automation.
+Als nächstes automatisieren wir Excel. Wir haben die Daten von der UI5-App gesammelt. Jetzt müssen wir die Daten wieder in Excel einfügen. Wir werden dies in der Unter-Automatisierung `Write Excel` tun.
 
-Here is the expected result: 
+Hier ist das gewünschte Ergebnis:
 
 ![](../images/0920.png)
 
 ![](../images/0921.png)
 
 
-1. Switch to the `Write Excel` automation. Let's start by adding input parameters, which we got from the `Web Portal` sub-automation.
+1. Wechseln Sie zur Automatisierung `Write Excel`. Fügen Sie die Eingabeparametern hinzu, die wir aus der `Web Portal` Automatisierung erhalten haben.
 
 ![](../images/0900.png)
 
-2. Add the same input paramers as the output paramers we added in the web automation.
+2. Fügen Sie die gleichen Eingabeparameter hinzu wie die Ausgabeparameter, die wir in der Web-Automatisierung hinzugefügt haben:
 
 | Name        | Type           | List  |
 | ------------- |-------------| -----|
@@ -29,21 +29,22 @@ Here is the expected result:
 
 ![](../images/0902.png)
 
-3. Use the `Set Values (Cells)` to write data into a specific cell. 
+3. Verwenden Sie den Schritt `Set Values (Cells)`, um Daten in eine bestimmte Zelle zu schreiben.
 
-`B2` and `orderNumber`
+`B2` und `orderNumber`
 
 ![](../images/0903.png)
 
-4. Duplicate this step
+4. Duplizieren Sie diesen Schritt
 
 ![](../images/0904.png)
 
-5. Change to `B3` and `price`
+5. Verändern Sie die Parameter zu `B3` und `price`
 
 ![](../images/0905.png)
 
 6. Duplicate and change using the expression editor, to get the value inside the data type.
+6. Verwemdem Sie den `expression editor`, um den Wert innerhalb des Datentyps zu erhalten.
 
 `B4` 
 
@@ -51,18 +52,19 @@ Here is the expected result:
 Step0.shippingAddress.Name
 ```
 
-`Step0` contains the input parameters
+`Step0` enthält die Eingabeparameter
 
 ![](../images/0906.png)
 
 ![](../images/0907.png)
 
 7. Repeat the steps for `Street` inside the shipping address.
+7. Wiederholen Sie die Schritte für `Street` in der Lieferadresse.
 
 
 ![](../images/0908.png)
 
-8. Duplicate the steps to save time and adjust the parameters according to this table:
+8. Duplizieren Sie die Schritte, um Zeit zu sparen, und passen Sie die Parameter gemäß dieser Tabelle an:
 
 | rangeDefinition        | Value           | 
 | ------------- |-------------|

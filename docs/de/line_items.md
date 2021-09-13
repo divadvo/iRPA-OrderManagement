@@ -1,8 +1,8 @@
-# Line Items
+# Auftragspositionen
 
 <!-- ## Saving line Items -->
 
-1. Let's start by creating a variable which will contain multiple line items. Add the `Line Item` step, make sure to check the `list` option and rename the output parameter to 
+1. Wir beginnen mit der Erstellung einer Variablen, die mehrere Auftragspositionen enthalten wird. Fügen Sie den Schritt  `Line Item` hinzu, aktivieren Sie die Option `list` und benennen Sie den Ausgabeparameter um in
 
 ```
 lineItems
@@ -11,52 +11,52 @@ lineItems
 ![](../images/0841.png)
 
 
-2. Create a `for each` loop
+2. Erstellen eine `for each` Schleife
 
 ![](../images/0850.png)
 
-3. Select `Products` as a looping list
+3. Wählen Sie `Products` als Liste für die Schleife aus
 
 ![](../images/0851.png)
 
-4. Inside the for loop add `Get Element` step, set target = `currentMember` and output = `products`. Rename the step if you wish
+4. Fügen Sie innerhalb der for-Schleife den Schritt `Get Element` hinzu, setzen Sie target = `currentMember` und output = `products`. Benennen Sie den Schritt um
 
 ![](../images/0852.png)
 
-5. Now duplicate the step by `right clicking` > `Duplicate` on the `get product` step. 
+5. Duplizieren Sie nun den Schritt, indem Sie mit der rechten Maustaste auf den Schritt `get product` klicken. `right click` > `Duplicate`
 
 ![](../images/0853.png)
 
-6. Rename the step, set target to `unitPrices` and output to `price`
+6. Benennen Sie den Schritt um, setzen Sie das target = `unitPrices` und output = `price`
 
 ![](../images/0855.png)
 
 ![](../images/0854.png)
 
-7. Again, duplicate the step and similarly set target to `quantities` element and output to `quantity`.
+7. Duplizieren Sie den Schritt nochmal und setzen target = `quantities` Element und output = `quantity`.
 
 ![](../images/0856.png)
 
 ![](../images/0857.png)
 
-8. Repeat the steps for the total prices elements. Target is `totalPrices`. Output is `total`.
+8. Wiederholen Sie die Schritte für die Elemente der Gesamtpreise. Target = `totalPrices`. Output = `total`.
 
 ![](../images/0858.png)
 
-9. Add a line item variable step. Set the output to `lineItem`.
+9. Fügen Sie einen Schritt für die Variable `line item` hinzu. Setzen Sie die Ausgabe auf `lineItem`.
 
 ![](../images/0859.png)
 
-10. Click on `Edit activity` and adjust the varibles for this data type. 
+10. Klicken Sie auf `Edit activity` und passen Sie die Variablen für diesen Datentyp an.
 
 ![](../images/0860.png)
 
-Now let's add the data type containing just a single line item to the list of all line itmes. 
+Wir fügen nun die Variable mit einer Auftragsposition zur Liste, die alle Auftragspositionen enthält.
 
-11. Insert an `add item` step. List = `lineItems`. itemToAdd = `lineItem`
+11. Fügen Sie den Schritt `add item` hinzu. List = `lineItems`. itemToAdd = `lineItem`
 
 ![](../images/0861.png)
 
-If we test the automation now we will see that the list is being generated. 
+Wenn wir die Automatisierung jetzt testen, werden wir sehen, dass die Liste erstellt wird.
 
 ![](../images/0862.png)

@@ -1,19 +1,19 @@
-# Input / Output Parameters
+# Eingabe- / Ausgabeparameter
 
 
 <!-- ## IO params - Web automation -->
 
-We have to pass data between sub-automation. We can do this by using input and output parameters.
+Wir müssen Daten zwischen Unter-Automatisierungen weitergeben. Dies kann mit Hilfe von Eingabe- und Ausgabeparametern erfolgen.
 
-The web automation will get the partner name from the main automation and give back the order number, price, shipping info and line item details. This data will in turn be passed to the excel automation.
+Die Web-Automatisierung erhält den Namen des Lieferanten aus der Hauptautomatisierung und gibt die Bestellnummer, den Preis, die Versandinformationen und die Auftragspositionen zurück. Diese Daten werden wiederum an die Excel-Automatisierung weitergegeben.
 
-1. Select `Web Portal` automation. Click anywhere on the grey area to open the automation parameters.
+1. Wählen Sie die Automatisierung `Web Portal` aus. Klicken Sie irgendwo auf die graue Fläche, um die Automatisierungsparameter zu öffnen.
 
-2. Add an input parameter called `CustomerName` of type `string`
+2. Fügen Sie einen Eingabeparameter mit dem Namen `CustomerName` und Typ `string` hinzu.
 
 ![](../images/0863.png)
 
-3. Similarly create output parameters
+3. Erstellen Sie auf ähnliche Weise folgende Ausgabeparameter:
 
 | Name        | Type           | List  |
 | ------------- |-------------| -----|
@@ -28,8 +28,8 @@ The web automation will get the partner name from the main automation and give b
 
 ![](../images/0866.png)
 
-4. Now actually define which variables will be returned. Click on the `End` step, select `parameters` and select the respective variables for outputs. 
+4. Legen Sie nun fest, welche Variablen zurückgegeben werden sollen. Klicken Sie auf den Schritt `End`, wählen Sie `parameters` aus und wählen Sie die entsprechenden Variablen als Ausgabe.
 
 ![](../images/0867.png)
 
-5. Don't forget to save the automation.
+5. Vergessen Sie nicht, die Automatisierung zu speichern.

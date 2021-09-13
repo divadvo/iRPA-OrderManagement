@@ -1,19 +1,19 @@
-# End
+# Ende
 
-## Testing automation
+## Automatisierung testen
 
-If we now test the automation, we see the expected results. There are additional automation steps in RPA which can be used to format the cells. Because of the limited available time in this workshop we didn't include those steps. 
+Wenn wir nun die Automatisierung testen, sehen wir die erwarteten Ergebnisse. Es gibt zusätzliche Automatisierungsschritte in RPA, die zur Formatierung der Zellen verwendet werden können. Aufgrund der begrenzten Zeit, die in diesem Workshop zur Verfügung steht, haben wir diese Schritte nicht berücksichtigt.
 
 ![](../images/0920.png)
 
 ![](../images/0921.png)
 
 
-## Congrats! 🎉
+## Herzlichen Glückwunsch! 🎉
 
-Nice, we have successfully created this automation! 🎉
+Wir haben diese Automatisierung erfolgreich erstellt! 🎉
 
-This is what the final result looks like: 
+So sieht das Endergebnis aus:
 
 
 [Video](../images/OrderManagementVideo.mp4 ':include :type=video width=100% controls' )
