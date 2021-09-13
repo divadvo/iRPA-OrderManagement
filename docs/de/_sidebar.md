@@ -4,8 +4,8 @@
 
 * Anwendung Definieren
     * [Anwendung und ersten Bildschirm definieren](de/first_screen.md)
-    * [Define Second Screen](de/second_screen.md)
-    * [Define Third Screen](de/third_screen.md)
+    * [Zweiten Bildschirm Definieren](de/second_screen.md)
+    * [Dritten Bildschirm Definieren](de/third_screen.md)
     * [Continue Defining Third Screen](de/third_screen_continued.md)
 
 * Automatisierung Definieren

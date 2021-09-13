@@ -1,74 +1,74 @@
-# Define Second Screen
+# Zweiten Bildschirm Definieren
 
-## Define second screen
+## Zweiten Bildschirm Definieren
 
-Next we will add the second screen from within the same UI5 app. This way the bot can recognize the results of a search
+Als Nächstes fügen wir den zweiten Bildschirm in derselben UI5-App hinzu. Der Bot wird die Ergebnisse einer Suche erkennen
 
-1. Open the [UI5 app](https://openui5.hana.ondemand.com/test-resources/sap/m/demokit/orderbrowser/webapp/test/mockServer.html) is opened in a seperate window, and enter `Bottom-` in the search. Make sure the order `2686` is found. Keep the window open.
+1. Öffnen Sie die [UI5-App](https://openui5.hana.ondemand.com/test-resources/sap/m/demokit/orderbrowser/webapp/test/mockServer.html) in einem separaten Fenster, und geben Sie `Bottom-` in die Suche ein. Stellen Sie sicher, dass die Bestellung `2686` gefunden wird. Lassen Sie das Fenster geöffnet.
 
 
 ![](../images/0070_SearchScreenPreview.png)
 
-2. Within the cloud studio, click on `...` next to the first screen capture and select `Add Capture to Current Screen`.
+2. Klicken Sie im Cloud Studio auf  `...` neben dem ersten Bildschirm-Capture und wählen Sie `Add Capture to Current Screen` aus.
 
 
 ![](../images/0080_AddCaptureToCurrentScreen.png)
 
-3. `Refresh` and Select the window with `Browse Orders`
+3. Klicken Sie auf `Refresh` und wählen Sie das Fenster mit `Browse Orders`
 
-4. Name the new capture, e.g. 
+4. Bennen Sie die neue Aufnahme, z.B. 
 
 ```
 Search Result Screen
 ```
 
-5. Press `Capture`
+5. Klicken Sie auf `Capture`
 
 ![](../images/0090_SelectNewScreenApp.png)
 
 
-## Define elements on second screen
+## Elemente auf dem zweiten Bildschirm definieren
 
-1. Select the second screen we just defined `Search Result Screen`
+1. Wählen Sie den zweiten Bildschirm, den wir soeben definiert haben: `Search Result Screen`
 
-2. Click on the list row in the preview. Make sure the whole row is selected, and not just single text
+2. Klicken Sie in der Vorschau auf die Zeile. Vergewissern Sie sich, dass die gesamte Zeile ausgewählt ist und nicht nur der Text
 
-3. Rename the element, e.g. 
+3. Benennen Sie das Element, z.B.
 
 ```
 OrderFound
 ```
 
-4. Don't click on declare element yet.
+4. Klicken Sie noch NICHT auf `declare element`
 
 ![](../images/0091_SelectResultItem.png)
 
 
-We are going to adjust the criteria, so that the element can be recognized regardless of the order number. Currently RPA would be looking for a very specific list of criteria to find an element. These criteria can be found and changed under `criteria` section on the right.
+Wir werden die Kriterien so anpassen, dass das Element unabhängig von der Bestellnummer erkannt werden kann. Derzeit würde RPA nach einer sehr spezifischen Liste von Kriterien suchen, um ein Element zu finden. Diese Kriterien können im Abschnitt `criteria` auf der rechten Seite gefunden und geändert werden.
 
-We will specifically look for the element containing `Order` as text.
+Wir werden speziell nach dem Element suchen, welches `Order` als Text enthält.
 
-5. Click on the `text` criteria.
+5. Klicken Sie auf das Kriterium `text`.
 
 ![](../images/0100_ClickOnTextCriteria.png)
 
-6. A popup will be opened. Change the `operator` to `contains`. 
+6. Es wird ein Popup-Fenster geöffnet. Ändern Sie den `operator` zu `contains`. 
 
-7. Change `value` to 
+7. Ändern Sie `value` zu 
 
 ```
 Order
 ```
 
-8. `Apply` the criteria
+8. Klicken Sie auf `Apply`
 
 ![](../images/0110_TextContainsOrder.png)
 
-9. The criteria have been updated, as seen on the right.
+9. Die Kriterien wurden aktualisiert, wie auf der rechten Seite zu sehen ist.
 
-10. We can now save the element by clicking on `Declare Element`
+10. Wir können nun das Element speichern, indem wir auf `Declare Element` klicken.
 
-11. The element will be saved under `Declared Elements`
+11. Das Element wird unter `Declared Elements` gespeichert
 
 
 ![](../images/0120_ResultTextContainsOrder.png)
