@@ -6,7 +6,7 @@
     * [Anwendung und ersten Bildschirm definieren](de/first_screen.md)
     * [Zweiten Bildschirm Definieren](de/second_screen.md)
     * [Dritten Bildschirm Definieren](de/third_screen.md)
-    * [Continue Defining Third Screen](de/third_screen_continued.md)
+    * [Dritten Bildschirm Definieren - Teil 2](de/third_screen_continued.md)
 
 * Automatisierung Definieren
     * [Automation Into](de/automation_intro.md)

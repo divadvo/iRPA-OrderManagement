@@ -1,29 +1,29 @@
-# Continue Defining Third Screen
+# Dritten Bildschirm Definieren - Teil 2
 
 
-## Define Line Items
+## Auftragspositionen Definieren
 
-Next we will define the line items of an order. We will define each column as a collection.
+Als Nächstes werden wir die Auftragspositionen der Bestellung definieren. Wir werden jede Spalte als Liste definieren.
 
-### Products
+### Produkte
 
-1. Press on the first product cell. Make sure `td` is selected in the tree view. 
+1. Klicken Sie auf die erste Produktzelle. Stellen Sie sicher, dass `td` in der Baumansicht ausgewählt ist. 
 
-2. Name this element, e.g.
+2. Benennen Sie dieses Element, z.B.
 
 ```
 Products
 ```
-3. Remove the text criteria
+3. Entfernen Sie das Kriterium `text`
 
 
 ![](../images/0310.png)
 
-4. Select `id` instead
+4. Wählen Sie stattdessen `id` aus
 
 ![](../images/0320.png)
 
-5. Modify the criteria. Id should `contain` `cell0`, meaning the 0th column. 
+5. Ändern Sie die Kriterien. `id`, `contain`, `cell0`, also die 0. Spalte enthalten
 
 ```
 cell0
@@ -31,49 +31,49 @@ cell0
 
 ![](../images/0330.png)
 
-Now all 3 product cells have been identified. We want to define these as a collection.
+Nun sind alle 3 Produktzellen identifiziert worden. Wir wollen diese als eine Liste definieren.
 
-6. Click on `declare element`.
+6. Klicken Sie auf  `declare element`.
 
 ![](../images/0340.png)
 
 
-7. Click on `3 triangles`, to define these elements as a collection
+7. Klicken Sie auf  `3 Dreiecke`, um diese Elemente als eine Sammlung zu definieren
 
 ![](../images/0350.png)
 
-The elements have been detected. `td` is the collection. The elements have been uniquely identified.
+Die Elemente wurden erkannt. `td` ist jetzt eine Liste. Die Elemente wurden eindeutig identifiziert.
 
 
 ![](../images/0360.png)
 
 
-### Unit Prices
+### Stückpreise
 
-1. Select the unit price in the first row.
+1. Wählen Sie den Stückpreis in der ersten Zeile aus.
 
-2. Make sure it's the `span` element in the tree, containing multiple elements (`24.34 EUR` instead of just `24.34`)
+2. Vergewissern Sie sich, dass es sich um das `span`-Element im Baum handelt, das mehrere Elemente enthält (`24.34 EUR` statt nur `24.34`)
 
 
 ![](../images/0400.png)
 
-3. Remove text as criteria
+3. Entfernen Sie das Kriterium `text`
 
 ![](../images/0410.png)
 
-4. Set `class` as criteria instead.
+4. Wählen Sie stattdessen `class` aus
 
 ![](../images/0411.png)
 
-Now we want to make sure that the collection of multiple elements is based on the table cells. For this we will use `td` as the criteria for finding the `span` elements. 
+Jetzt wollen wir sicherstellen, dass die Liste von mehreren Elementen auf den Tabellenzellen basiert. Zu diesem Zweck verwenden wir `td` als Kriterium für die Suche nach den `span`-Elementen.
 
-5. Right click on `td` and select `add to criteria`.
+5. Klicken Sie mit der rechten Maustaste auf `td` und wählen Sie `add to criteria` aus.
 
 ![](../images/0420.png)
 
-`td` is now part of the criteria. 
+`td` ist jetzt Teil der Kriterien.
 
-6. Adjust the `id` of `td` to be `contains` and value:
+6. Passen Sie die  `id` von `td` an: `contains` und Wert:
 
 ```
 cell1
@@ -81,43 +81,43 @@ cell1
 
 ![](../images/0430.png)
 
-7. `Rename` the element to e.g.
+7. Benennen Sie das Element um, z.B. in
 
 ```
 unitPrices
 ```
 
-8. Click on `declare element`
+8. Klicken Sie auf `declare element`
 
 ![](../images/0440.png)
 
 
-Now instead of defining a collection like we did before, we will declare the collection based on the parent element `td` we added as condition. This way the bot will loop over the `td` cells and find the `span` within these.
+Anstatt nun eine Liste zu definieren, wie wir es zuvor getan haben, werden wir die List auf der Grundlage des übergeordneten Elements `td` deklarieren, das wir als Bedingung hinzugefügt haben. Auf diese Weise wird der Bot eine Schleife über die `td`-Zellen ziehen und `span`-Elemente darin finden.
 
-9. Click on `...` next to `td` and click `set as collection`.
+9. Klicken Sie auf  `...` neben `td` und dann auf `set as collection`.
 
 ![](../images/0450.png)
 
-The element has been defined.
+Das Element wurde definiert.
 
 ![](../images/0460.png)
 
-10. Don't forget to save the progress by clicking on the `save` button at the top right.
+10.	Vergessen Sie nicht, den Fortschritt zu speichern, indem Sie auf `save` oben rechts klicken.
 
 ![](../images/0520_dontForgetToSave.png)
 
-### Total Prices
+### Gesamtpreis
 
-The last column is `total prices`. That column has a similar structure as `unit price`, so we will speed up the definition process by copying `unitPrice` element and adjusting the configuration slightly.
+Die letzte Spalte ist der Gesamtpreis (`total prices`). Diese Spalte hat eine ähnliche Struktur wie der Stückpreis. Wir können den Definitionsprozess beschleunigen, indem wir das Element `unitPrice` kopieren und die Konfiguration leicht anpassen.
 
-1. Click on `...` next to `unitPrices`. 
+1. Klicken Sie auf `...` neben `unitPrices`.
 
-2. Select `duplicate`
+2. Klicken Sie auf `duplicate`
 
 
 ![](../images/0470.png)
 
-3. Name the new element, e.g.
+3. Benennen Sie das neue Element, z.B.
 
 ```
 totalPrices
@@ -126,13 +126,13 @@ totalPrices
 ![](../images/0480.png)
 
 
-Next, adjust the `id` of the cell from 2nd=`1` to 4th=`3` (counting starts from `0`)
+Als Nächstes passen Sie die `id` der Zelle von 2=`1` bis 4=`3` an (die Zählung beginnt bei `0`)
 
-4. Click on `id` under `td`.
+4. Klicken Sie auf `id` unter `td`.
 
 ![](../images/0490.png)
 
-5. Set criteria to `contains`  and value
+5. Ändern Sie das Kriterium: `contains` und Wert
 
 ```
 cell3
@@ -140,37 +140,35 @@ cell3
 
 ![](../images/0500.png)
 
-The total prices have been defined. We didn't have to define them from scratch and were able to save time by duplicating another definition.
-
+Die Gesamtpreise sind bereits definiert. Wir mussten sie nicht von Grund auf neu definieren und konnten durch das Duplizieren Zeit sparen.
 
 ![](../images/0510.png)
 
 
-### Quantities
+### Mengen
 
-1. Click on the quantities cell. Make sure the `td` (table cell) element is selected in the tree view.
+1. Klicken Sie auf die Zelle mit den Mengen. Stellen Sie sicher, dass das Element `td` (Tabellenzelle) in der Baumansicht ausgewählt ist.
 
-2. Remove the text criteria. Adjust the criteria to `id`. In the popup choose `contains` and `cell2`.
+2. Entfernen Sie das Kriterium `text`. Passen Sie das Kriterium auf `id` an. Im Popup wählen Sie `contains` und `cell2`.
 
 ![](../images/1001.png)
 
-3. Rename the element to `quantities`, make sure the criteria are like in the screenshot.
+3. Benennen Sie das Element in `quantities` um und stellen Sie sicher, dass die Kriterien wie im Screenshot aussehen.
 
-4. Click on declare and make the element a collection by clicking on the triangles in the declared elements section.
+4. Klicken Sie auf `declare` und machen Sie das Element zu einer Liste, indem Sie auf die `Dreiecke` unter `declared elements` klicken.
 
 ![](../images/1002.png)
 
 
 
-## Save
+## Spreichern
 
 
-The screens and elements have been defined. We can now move on to defining the automation.
+Die Bildschirme und Elemente sind nun definiert. Wir können nun mit der Definition der Automatisierung fortfahren.
 
-Don't forget to save your work by clicking `save` in the top right.
-
+Vergessen Sie nicht, Ihre Arbeit zu speichern, indem Sie oben rechts auf `save` klicken.
 
 ![](../images/0520_dontForgetToSave.png)
 
 
-Nice! We have completed the capturing of the application and can now start creating the actual automation.
+Sehr schön! Wir haben die Erfassung der Anwendung abgeschlossen und können nun mit der Erstellung der eigentlichen Automatisierung beginnen.
