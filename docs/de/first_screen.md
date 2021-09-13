@@ -1,58 +1,58 @@
-# Define Application and First Screen
+# Anwendung und ersten Bildschirm definieren
 
-## Overview
-Next, we will define the application which will be used in our automation. In our case we will define the orders UI5 app, the various screens and the elements on the web page. We will use these screens and elements in the automation later.
+## Übersicht
+Als Nächstes werden wir die Anwendung definieren, die in unserer Automatisierung verwendet werden soll. In unserem Fall werden wir die UI5-App für Bestellungen, die verschiedenen Bildschirme und die Elemente auf der Webseite definieren. Wir werden diese Bildschirme und Elemente später in der Automatisierung verwenden.
 
-## Create application
+## Anwendung erstellen
 
-1. Make sure the [UI5 app](https://openui5.hana.ondemand.com/test-resources/sap/m/demokit/orderbrowser/webapp/test/mockServer.html) is opened in a seperate window, not just in a new tab. Desktop Agent should also be running and connected to the correct tenant.
+1. 1.	Vergewissern Sie sich, dass die [UI5 app](https://openui5.hana.ondemand.com/test-resources/sap/m/demokit/orderbrowser/webapp/test/mockServer.html) in einem separaten Fenster geöffnet ist, nicht nur in einem neuen Tab. Der Desktop Agent sollte ebenfalls laufen und mit dem richtigen Tenant verbunden sein.
 
-2. Select `Create` > `Application`
+2. Wählen Sie  `Create` > `Application`
 
 ![](../images/0030_CreateApplication.png)
 
 
-3. Click on `refresh icon` multiple times to get the currently open windows
+3. Klicken Sie mehrmals auf das `Aktualisierungssymbol`, um die aktuell geöffneten Fenster anzuzeigen
 
-4. Select the window titled `Browse order`. This is our UI5 application
+4. Wählen Sie das Fenster mit dem Titel `Browse order` aus. Dies ist unsere UI5-Anwendung
 
-5. Give a name to the application. `Application name` E.g.
+5. Geben Sie der Anwendung einen Namen (`Application name`), z.B.
 
 
 ```
 Browse Orders
 ```
 
-6. Give a name to the first `screen` we are capturing. The application changes the view, when we click on one of the orders. A new screen with the detailed information appears. For this reason we will capture multiple `screens` of a single `application`. Screen name example:
+6. Geben Sie dem ersten Bildschirm (`screen`), den wir aufzeichnen, einen Namen. Die Anwendung ändert die Ansicht, wenn wir auf einen der Aufträge klicken. Es erscheint ein neuer Bildschirm / neue Ansicht mit den detaillierten Informationen. Aus diesem Grund werden wir mehrere Bildschirme einer einzigen Anwendung erfassen. Beispiel für einen Bildschirmnamen:
 
 
 ```
 Orders List Screen
 ```
 
-7. Click on `capture`
+7. Klicken Sie auf `capture`
 
 ![](../images/0040_CreateCapture.png)
 
-8. The result is a captured application and captured first screen
+8. Das Ergebnis ist eine erfasste Anwendung und ein erfasster erster Bildschirm
 
 
 ![](../images/0050_ResultOfFirstCapture.png)
 
 
-## Define elements on first screen
+## Elemente auf dem ersten Bildschirm definieren
 
-Next, we will define the only relevant element on the first screen --> `search box`. Our bot will search for the supplier in this search box, so we have to define this element. 
+Als Nächstes werden wir das einzige relevante Element auf dem ersten Bildschirm definieren: Suchfeld. Unser Bot wird in diesem Suchfeld nach dem Lieferanten suchen, also müssen wir dieses Element definieren.
 
-1. To do this, click on the search box within the preview. 
-2. Name the search box element. E.g.
+1. Klicken Sie auf das Suchfeld in der Vorschau
+2. Benennen Sie das Suchfeld-Element. z.B.
 
 ```
 searchBox
 ```
 
-3. Make sure the element is uniquely recognized (green status)
-4. Don't forget to click on `declare element` to make sure this element is actually saved. 
-5. The defined search box element will appear under `Declared elements` with a green status, meaning that the element has been successfully defined.
+3. Stellen Sie sicher, dass das Element eindeutig indentifiziert wird (grüner Status)
+4. Verfessen Sie nicht, auf `declare element` zu klicken, um sicherzustellen, dass dieses Element auch wirklich gespeichert wird.
+5. Das definierte Suchkastenelement wird unter `Declared elements` mit einem grünen Status angezeigt. Das bedeutet, dass das Element erfolgreich definiert wurde.
 
 ![](../images/0060_SearchBoxCapture.png)

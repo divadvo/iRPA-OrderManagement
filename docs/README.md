@@ -8,7 +8,7 @@ In this hands-on we are going to automate the extraction of order data from a UI
 [Video](images/OrderManagementVideo.mp4 ':include :type=video width=100% controls' )
 
 
-## Switch Language
+## Sprache Wechseln / Change Language
 
 [en](https://divadvo.github.io/iRPA-OrderManagement/#/)  [de](https://divadvo.github.io/iRPA-OrderManagement/#/de/)
 

@@ -1,9 +1,9 @@
 * Intro
-    * [Test](de/)
-    * [Create Project](de/create_project.md)
+    * [Einführung](de/)
+    * [Projekt erstellen](de/create_project.md)
 
-* Applikation Definieren
-    * [Define Application and First Screen](de/first_screen.md)
+* Anwendung Definieren
+    * [Anwendung und ersten Bildschirm definieren](de/first_screen.md)
     * [Define Second Screen](de/second_screen.md)
     * [Define Third Screen](de/third_screen.md)
     * [Continue Defining Third Screen](de/third_screen_continued.md)

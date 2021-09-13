@@ -1,39 +1,38 @@
 
 ![](../../images/hero.png)
 
-# Intro
+# Einführung
 
-In this hands-on we are going to automate the extraction of order data from a UI5 app into Excel, with help of SAP Intelligent RPA (SAP iRPA).
+In diesem Hands-on werden wir Bestelldaten aus einer UI5-App extrahieren und in eine Excel mit Hilfe von SAP Intelligent RPA (SAP iRPA) schreiben.
 
 [Video](../images/OrderManagementVideo.mp4 ':include :type=video width=100% controls' )
 
 
-## Switch Language
+## Sprache Wechseln / Change Language
 
 [en](https://divadvo.github.io/iRPA-OrderManagement/#/)  [de](https://divadvo.github.io/iRPA-OrderManagement/#/de/)
 
 
-## Prerequisites
+## Voraussetzungen
 
-Before we start, please make sure you have 
-- Setup the trial environment, as described in [this blog](https://blogs.sap.com/2021/03/22/sap-intelligent-rpa-2.0-onboarding-sap-business-technology-platform-trial-account/). You should have the Desktop Agent installed locally and have access to the Cloud Studio environment
-- You have the Excel file we are going to use. [Download here](/iRPA-OrderManagement/Demo_Procurement.xlsx ':ignore'). 
-- Have access to the [UI5 app](https://openui5.hana.ondemand.com/test-resources/sap/m/demokit/orderbrowser/webapp/test/mockServer.html)
-
-
-## Getting help
-
-Please note that both instructions and screenshots are given. Some screenshots are related to multiple previous steps.
-
-If you have any questions or get stuck, please let us know.
+Bevor wir beginnen, stellen Sie bitte sicher, dass Sie folgende Schritte durchgeführt haben
+- Richten Sie die Testumgebung ein, wie in [diesem Blog](https://blogs.sap.com/2021/03/22/sap-intelligent-rpa-2.0-onboarding-sap-business-technology-platform-trial-account/) beschrieben. Sie sollten den Desktop Agent lokal installiert haben und Zugriff auf die Cloud Studio-Umgebung haben
+- Sie haben die Excel-Datei, die wir verwenden werden [Datei hier](/iRPA-OrderManagement/Demo_Procurement.xlsx ':ignore'). 
+- Sie haben Zugang zur [UI5 App](https://openui5.hana.ondemand.com/test-resources/sap/m/demokit/orderbrowser/webapp/test/mockServer.html)
 
 
-## Getting started 
+## Support
 
-We will develop the automation in multiple steps. We will: 
-1. Create a project
-2. Capture the application screen
-3. Define automation: on UI5 and Excel sides
-4. Test automation
+Einige Screenshots beziehen sich auf mehrere vorherige Schritte.
+Wenn Sie Fragen haben oder nicht weiterkommen, schreiben Sie bitte in den Chat oder sprechen Sie uns an.
 
-We will iteratively ensure that we are on the right track.
+
+## Übersicht
+
+Wir werden die Automatisierung in mehreren Schritten entwickeln. Wir werden: 
+1. Ein Projekt erstellen 
+2. UI5 Anwendung erfassen
+3. Automatisierungen definieren (UI5 und Excel)
+4. Automatisierung testen
+
+Wir werden iterativ sicherstellen, dass wir auf dem richtigen Weg sind.
