@@ -47,7 +47,7 @@ lineItems
 
 ![](images/0859.png)
 
-10. Click on `Edit activity` and adjust the variables for this data type. 
+10.  Click on `Input Parameters value`  and select  `create custom data`. Adjust the variables for this data type. 
 
 ![](images/0860.png)
 

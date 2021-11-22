@@ -4,7 +4,7 @@
 
 Next we will add the second screen from within the same UI5 app. This way the bot can recognize the results of a search
 
-1. Open the [UI5 app](https://openui5.hana.ondemand.com/test-resources/sap/m/demokit/orderbrowser/webapp/test/mockServer.html) is opened in a seperate window, and enter `Bottom-` in the search. Make sure the order `2686` is found. Keep the window open.
+1. Open the [UI5 app](https://openui5.hana.ondemand.com/test-resources/sap/m/demokit/orderbrowser/webapp/test/mockServer.html) is opened in a seperate window, and enter `Bottom-` in the search. Click on search icon. Make sure the order `2686` is found. Keep the window open.
 
 
 ![](images/0070_SearchScreenPreview.png)
@@ -14,9 +14,9 @@ Next we will add the second screen from within the same UI5 app. This way the bo
 
 ![](images/0080_AddCaptureToCurrentScreen.png)
 
-3. `Refresh` and Select the window with `Browse Orders`
+3. Select the window with `Browse Orders` (refresh if needed)
 
-4. Name the new capture, e.g. 
+4. Name the new capture, e.g.
 
 ```
 Search Result Screen
@@ -33,7 +33,7 @@ Search Result Screen
 
 2. Click on the list row in the preview. Make sure the whole row is selected, and not just single text
 
-3. Rename the element, e.g. 
+3. Rename the element, e.g.
 
 ```
 OrderFound
@@ -44,7 +44,7 @@ OrderFound
 ![](images/0091_SelectResultItem.png)
 
 
-We are going to adjust the criteria, so that the element can be recognized regardless of the order number. Currently RPA would be looking for a very specific list of criteria to find an element. These criteria can be found and changed under `criteria` section on the right.
+We are going to adjust the criteria, so that the element can be recognized regardless of the order number. Currently RPA would be looking for a very specific list of criteria to find an element. These criteria can be found and changed under `criteria` section on the right (scroll if needed).
 
 We will specifically look for the element containing `Order` as text.
 
@@ -52,9 +52,9 @@ We will specifically look for the element containing `Order` as text.
 
 ![](images/0100_ClickOnTextCriteria.png)
 
-6. A popup will be opened. Change the `operator` to `contains`. 
+6. A popup will be opened. Change the `operator` to `contains`.
 
-7. Change `value` to 
+7. Change `value` to
 
 ```
 Order
@@ -72,3 +72,5 @@ Order
 
 
 ![](images/0120_ResultTextContainsOrder.png)
+
+![](images/0121_ResultTextContainsOrder-final.png)

@@ -16,7 +16,7 @@ Next we will add the third screen from within the same UI5 app. This way the bot
 
 3. `Refresh` and Select the window with `Browse Orders`
 
-4. Name the new capture, e.g. 
+4. Name the new capture, e.g.
 
 ```
 Order Details Screen
@@ -35,7 +35,7 @@ Order Details Screen
 
 2. Click on the order number in the preview
 
-3. Rename the element, e.g. 
+3. Rename the element, e.g.
 
 ```
 Order Number
@@ -45,24 +45,25 @@ Order Number
 
 ![](images/0160_SelectOrder.png)
 
-
 As before, we are going to adjust the criteria.
 
 5. Click on the `text` criteria.
 
-6. A popup will be opened. Change the `operator` to `contains`. 
+6. A popup will be opened. Change the `operator` to `contains`.
 
 7. Change `value` to `Order ` **with a space at the end**
 
 ```
-Order 
+Order
 ```
 
-8. `Apply` the criteria
+8. `Apply` the criteria.
 
 9. Don't forget to click on `Declare Element`
 
 ![](images/0170_AdjustOrderCriteria.png)
+
+![](images/0171_AdjustOrderCriteria-Declare.png)
 
 
 ### Price
@@ -79,7 +80,7 @@ Order
 
 ![](images/0200_SelectIdPrice.png)
 
-5. Rename the element, e.g. 
+5. Rename the element, e.g.
 
 ```
 Price
@@ -106,7 +107,9 @@ Next, we will define address in a different way, as a collection of multiple ele
 
 ![](images/0240_AddressPickClass.png)
 
-Within iRPA we can also see the underlying technical document structure of the page. We will use this to more precisely select the element that we want.
+![](images/0241_AddressPickClass.png)
+
+Within IRPA we can also see the underlying technical document structure of the page. We will use this to more precisely select the element that we want.
 
 4. Click on `both` at the top to show both the preview, as well as the technical structure.
 
@@ -115,7 +118,7 @@ Within iRPA we can also see the underlying technical document structure of the p
 
 ![](images/0250_OpenTree.png)
 
-6. `div` is selected. Now let's remove the `text` criteria as it is too specific. 
+6. `div` is selected. Now let's remove the `text` criteria as it is too specific.
 
 ![](images/0260_PickDivAbove.png)
 
@@ -131,7 +134,7 @@ Shipping Address
 9. Click on `declare element`
 ![](images/0280_RenameShipping.png)
 
-Now the element cannot be uniquely identified, because multiple elemnts fulfill the same criteria. RPA shows this in the error status message as well as a `red x` in the `declared elements` section. 
+Now the element cannot be uniquely identified, because multiple elemnts fulfill the same criteria. RPA shows this in the warning status message as well as a `yellow !` in the `declared elements` section.
 
 10. We can create a collection of these multiple elements, by clicking the `3 tags/triangles` under declared elements, while `shipping address` is selected.
 

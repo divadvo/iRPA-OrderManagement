@@ -6,11 +6,11 @@ Let's define the general structure of our automation. Here is the data we want f
 
 ![](images/0705.png)
 
-1. We want to open Excel. Repeat the steps above for `Open Excel Instance`.
+1. We want to open Excel. Repeat be sure that steps from Automatio Intro are done and `Open Excel Instance` is added to automation.
 
 ![](images/0701.png)
 
-2. We want to open the correct workbook. Repeat the steps above for `Open Workbook`.
+2. We want to open the correct workbook. RRepeat the steps (click on blank space, atype in search box, search, select, drop) for `Open Workbook`.
 
 In the parameters on the right, edit the expression and enter the full path to your file. Make sure the path is within quotation marks `"..."` E.g.
 
@@ -19,11 +19,13 @@ In the parameters on the right, edit the expression and enter the full path to y
 ```
 
 
-![](images/0702.png)
+![](images/0702a.png)
 
-![](images/07021.png)
+![](images/0702b.png)
 
-3. We want to open a specific worksheet. Repeat the steps above for `Activate Worksheet`. Set `worksheetName` = 
+![](images/0702c.png)
+
+3. We want to open a specific worksheet. Repeat the steps (click on blank space, type in search box, search, select, drop) for `Activate Worksheet`. Set `worksheetName` = 
 
 ```
 Overview
@@ -32,6 +34,7 @@ Overview
 
 ![](images/0703.png)
 
+![](images/0703b.png)
 
 4. We want to get a value from a cell. Repeat the steps above for `Get Values (Cells)`. Set `rangeDefinition` = `B1`. And rename outputParamenter to  
 
@@ -44,21 +47,23 @@ This means that this step will run and the result (value from cell B1) will be s
 
 ![](images/0704.png)
 
+![](images/0704b.png)
+
 5. Add `Web Portal` and `Write Excel` subautomations. So far they are not doing anything, but just acting as placeholders. 
 
 
 ![](images/0706.png)
 
-6. At the end we want to make sure that Excel is not used by iRPA anymore. We release the instance. Repeat the steps above for `Release Excel Instance`
+6. At the end we want to make sure that Excel is not used by IRPA anymore. We release the instance. Repeat the steps above for `Release Excel Instance`
 
 
 ![](images/0707.png)
 
 ## 🔹 Setup environment
 
-Before we can test our automation, let's setup an environment, which is a landscape within iRPA. For instance we can define environments for dev, test and prod. We will add your local desktop agent to a test environment, so we can test our automations.
+Before we can test our automation, let's setup an environment, which is a landscape within IRPA. For instance we can define environments for dev, test and prod. We will add your local desktop agent to a test environment, so we can test our automations.
 
-1. Back in the home screen of the cloud factory, go to `environemnts`. Then click on `New Environment`
+1. Back in the home screen of the Cloud Factory (should be first IRPA tab in browser), go to `environemnts`. Then click on `New Environment`
 
 ![](images/1010.png)
 
@@ -85,7 +90,7 @@ Before we can test our automation, let's setup an environment, which is a landsc
 
 ## 🔹 How to test automation
 
-Let's not do too much work without seeing what the bot does and if we make any mistakes. 
+Let's not do too much work without seeing what the bot does and if we made any mistakes. 
 
 1. `Save` the automation, then click on `test`.
 
@@ -95,6 +100,8 @@ Let's not do too much work without seeing what the bot does and if we make any m
 
 
 ![](images/0708.png)
+
+![](images/0708b.png)
 
 It takes a while for the desktop agent to download, process and run the automation. Here are some of the messages you will see:
 

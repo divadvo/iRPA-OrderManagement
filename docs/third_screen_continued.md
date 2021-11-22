@@ -7,7 +7,11 @@ Next we will define the line items of an order. We will define each column as a 
 
 ### Products
 
-1. Press on the first product cell. Make sure `td` is selected in the tree view. 
+1. Press on the first product cell. Click on the `>` > just before selected `TR` TR element. Make sure that the second `TD` is selected in the tree view. 
+
+![](images/0310.png)
+
+![](images/0311.png)
 
 2. Name this element, e.g.
 
@@ -17,11 +21,13 @@ Products
 3. Remove the text criteria
 
 
-![](images/0310.png)
+![](images/0312.png)
 
 4. Select `id` instead
 
 ![](images/0320.png)
+
+![](images/0321.png)
 
 5. Modify the criteria. Id should `contain` `cell0`, meaning the 0th column. 
 
@@ -42,7 +48,7 @@ Now all 3 product cells have been identified. We want to define these as a colle
 
 ![](images/0350.png)
 
-The elements have been detected. `td` is the collection. The elements have been uniquely identified.
+The elements have been detected. `TD` is the collection. The elements have been uniquely identified. Click on `Save` button.
 
 
 ![](images/0360.png)
@@ -50,12 +56,17 @@ The elements have been detected. `td` is the collection. The elements have been 
 
 ### Unit Prices
 
-1. Select the unit price in the first row.
+1. Click on the first product row. Now we want to select the unit price in the first row.
 
-2. Make sure it's the `span` element in the tree, containing multiple elements (`24.34 EUR` instead of just `24.34`)
+2. Make sure it's the `SPAN` element in the tree, containing multiple elements (`24.34 EUR` instead of just `24.34`)
 
 
 ![](images/0400.png)
+
+![](images/0401.png)
+
+![](images/0402.png)
+
 
 3. Remove text as criteria
 
@@ -65,15 +76,19 @@ The elements have been detected. `td` is the collection. The elements have been 
 
 ![](images/0411.png)
 
-Now we want to make sure that the collection of multiple elements is based on the table cells. For this we will use `td` as the criteria for finding the `span` elements. 
+![](images/0412.png)
 
-5. Right click on `td` and select `add to criteria`.
+Now we want to make sure that the collection of multiple elements is based on the table cells. For this we will use `TD` as the criteria for finding the `SPAN` elements. 
+
+5. Right click on `TD` and select `add to criteria`.
 
 ![](images/0420.png)
 
-`td` is now part of the criteria. 
+`TD` is now part of the criteria. 
 
-6. Adjust the `id` of `td` to be `contains` and value:
+![](images/0421.png)
+
+6. Adjust the `id` of `TD` to be `contains` and value:
 
 ```
 cell1
@@ -92,9 +107,9 @@ unitPrices
 ![](images/0440.png)
 
 
-Now instead of defining a collection like we did before, we will declare the collection based on the parent element `td` we added as condition. This way the bot will loop over the `td` cells and find the `span` within these.
+Now instead of defining a collection like we did before, we will declare the collection based on the parent element `TD` we added as condition. This way the bot will loop over the `TD` cells and find the `SPAN` within these.
 
-9. Click on `...` next to `td` and click `set as collection`.
+9. Click on `...` next to `TD` and click `set as collection`.
 
 ![](images/0450.png)
 
@@ -104,7 +119,7 @@ The element has been defined.
 
 10. Don't forget to save the progress by clicking on the `save` button at the top right.
 
-![](images/0520_dontForgetToSave.png)
+![](images/0521_dontForgetToSave.png)
 
 ### Total Prices
 
@@ -122,6 +137,8 @@ The last column is `total prices`. That column has a similar structure as `unit 
 ```
 totalPrices
 ```
+
+Click on button `Duplicate`
 
 ![](images/0480.png)
 
@@ -148,18 +165,27 @@ The total prices have been defined. We didn't have to define them from scratch a
 
 ### Quantities
 
-1. Click on the quantities cell. Make sure the `td` (table cell) element is selected in the tree view.
+1. Click on the quantities cell. Expand and make sure the `td` (table cell) element is selected in the tree view.
+
+![](images/1000.png)
+
+![](images/1001.png)
 
 2. Remove the text criteria. Adjust the criteria to `id`. In the popup choose `contains` and `cell2`.
 
-![](images/1001.png)
+![](images/1002.png)
+
+![](images/1003.png)
+
+![](images/1004.png)
 
 3. Rename the element to `quantities`, make sure the criteria are like in the screenshot.
 
 4. Click on declare and make the element a collection by clicking on the triangles in the declared elements section.
 
-![](images/1002.png)
+![](images/1005.png)
 
+![](images/1006.png)
 
 
 ## Save
@@ -170,7 +196,7 @@ The screens and elements have been defined. We can now move on to defining the a
 Don't forget to save your work by clicking `save` in the top right.
 
 
-![](images/0520_dontForgetToSave.png)
+![](images/1010_dontForgetToSave.png)
 
 
 Nice! We have completed the capturing of the application and can now start creating the actual automation.

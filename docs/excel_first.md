@@ -74,7 +74,6 @@ Step0.shippingAddress.Name
 | B7 | Step0.shippingAddress.Region      | 
 | B8 | Step0.shippingAddress.Country      | 
 
+9. Add `Activate Worksheet` and configure input parameters to worskeet `Details` 
+
 ![](images/0909.png)
-
-
-![](images/0920.png)

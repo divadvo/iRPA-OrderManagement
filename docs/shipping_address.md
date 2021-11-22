@@ -4,7 +4,7 @@
 
 ## Data Types
 
-The name, adress, zip, etc from the shipping address are currently stored in an array. Let's add better structure to that by using `Data Types` from iRPA. These data types can store multiple variables and named fields, to represent more complex data structures. Let's create 2 data types: for a shipping address and a line item.
+The name, adress, zip, etc from the shipping address are currently stored in an array. Let's add better structure to that by using `Data Types` from IRPA. These data types can store multiple variables and named fields, to represent more complex data structures. Let's create 2 data types: for a shipping address and a line item.
 
 
 
@@ -65,9 +65,11 @@ Shipping Address
 
 ![](images/0835.png)
 
-3. Now let's set the values of the data type from the array. Click on `Edit Activity`. Under `Name` select `array[0]`. If `array[0]` option is not available, please see how to manually select that, like in the next steps.
+3. Now let's set the values of the data type from the array. Click on `Input Prameters value`. Select `Create Custom Data`. Under `Name` select `array[0]`. If `array[0]` option is not available, please see how to manually select that, like in the next steps.
 
 ![](images/0837.png)
+
+![](images/0837b.png)
 
 4. For the other field, let's change the array index to `1`. Click on `open expression editor`
 

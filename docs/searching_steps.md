@@ -31,7 +31,7 @@ Next we will define the automation within the UI5 app. On a high level it will:
 
 ![](images/0804.png)
 
-6. Change the navigator from `Internet Explorer` to `Chrome`, so that RPA open the page in Chrome.
+6. Change the navigator from `Internet Explorer` (or can be `Edge`) to `Chrome`, so that RPA open the page in Chrome.
 
 
 |  |  |  |
@@ -43,7 +43,7 @@ Next we will define the automation within the UI5 app. On a high level it will:
 
 ![](images/0807.png)
 
-8. Aditionally, RPA should wait to ensure that the search bar loads as well. Drag `Wait (Element)` onto the search bar preview. Make sure the target is set to search bar element.
+8. Aditionally, RPA should wait to ensure that the search bar loads as well. Drag `Wait (Element)` onto the search bar preview. Make sure the target is set to search bar element (cursor will change to `+`).
 
 
 ![](images/0808.png)
@@ -60,7 +60,7 @@ But how do we get the name of the supplier we got from Excel? It's not available
 
 ![](images/0810.png)
 
-11. Press on empty space to change the settings of the automation. Click on `I/O` > `Add new input parameter`.
+11. Press on empty space to change the settings of the automation. Click on `Input/Output` > `Add new input parameter`.
 
 
 ![](images/0811.png)
@@ -71,7 +71,7 @@ But how do we get the name of the supplier we got from Excel? It's not available
 CustomerName
 ```
 
-Type is `string`. Click on the empty space to save these settings. 
+Check if type is `string`. Click on the empty space. 
 
 
 ![](images/0812.png)
@@ -81,7 +81,10 @@ Type is `string`. Click on the empty space to save these settings.
 
 ![](images/0813.png)
 
-However, the value still hasn't been passed from the main automation. To do that
+
+Be sure to save by clicking on the button `Save`. 
+
+However, the value still hasn't been passed from the main automation. To do that...
 
 14. Go to the main automation either from the left side or from the tabs at the top. Select the `Web Portal` step and provide the input parameter
 
@@ -92,4 +95,4 @@ However, the value still hasn't been passed from the main automation. To do that
 
 ![](images/0816.png)
 
-15. Don't forget to `save` the progress. 
+15. Don't forget to `Save` the progress. 

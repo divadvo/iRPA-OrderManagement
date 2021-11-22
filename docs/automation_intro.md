@@ -12,14 +12,16 @@ We can start creating our automation from this high level and go down, implement
 
 ## Creating sub-automations
 
+NOTE: Agent should be installed on your machine (part of the prerequisite activities).
+
 Let's start by creating 3 automation: one main one, one for the UI5 part, one for Excel one
 
-1. Click on `create` > `automation`
+1. Click on tab `Overview` and then click on button `Create` and select (click) `automation`
 
 ![](images/0600.png)
 
 
-2. Select the version which is tagged `local`. This is the version of your desktop agent installed locally. Even if a higher version is available in the dropdown, please select the `local` version, to make sure that the automation can run on your machine.
+2. Select the version which is tagged `local` (your version number can be different than version shown on screen). This is the version of your desktop agent installed locally. Even if a lower or higher version is available in the dropdown, please select the `local` version, to make sure that the automation can run on your machine.
 
 ![](images/0601.png)
 
@@ -38,7 +40,9 @@ Order Management
 
 An empty automation has been created.
 
-![](images/0604.png)
+![](images/0604a.png)
+
+![](images/0604b.png)
 
 Repeat the steps `1` - `4` to create 2 more automations:
 
@@ -59,12 +63,17 @@ Write Excel
 
 We will repeat this process multiple times to add new steps to the automation. Please do this in the following steps.
 
-1. Press on the empty space within the preview to close all other open options
+1. Be sure that `Order Management` automation is selected (check tab) 
 
-2. Search for the step name in the seach bar
+2. Click on the empty space within the preview to close all other open options
 
-3. If necessary, click on `clear filter` to show all available steps
+3. Search for the step name in the seach bar
 
-4. Select the desired action and `drag and drop` it in the correct position
+4. Optional: If necessary, click on `clear filter` to show all available steps
+
+5. Select the desired action and `drag and drop` it in the correct position
 
 ![](images/0700_DropStep.png)
+
+
+![](images/0700_Complete.png)
